@@ -12,7 +12,7 @@ import (
 
 func main()  {
 	var searchSum = flag.Int64("sum", 200, "max sum search for")
-	var csvPath = flag.String("products.csv", "products.csv", "path of csv file")
+	var csvPath = flag.String("csv_file", "products.csv", "path of csv file")
 	flag.Parse()
 
 	csvFile, _ := os.Open(*csvPath)
